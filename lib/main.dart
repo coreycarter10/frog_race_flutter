@@ -8,9 +8,9 @@ class FrogRace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Frog Race',
+      title: 'Tree Frog Race',
       theme: ThemeData.dark(),
-      home: HomePage(title: 'Frog Race'),
+      home: HomePage(title: 'Tree Frog Race'),
     );
   }
 }
