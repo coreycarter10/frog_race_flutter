@@ -43,6 +43,7 @@ class _FrogDisplayState extends State<FrogDisplay> with SingleTickerProviderStat
       _animCtrl.forward();
     }
 
+    // TODO: TAKE A LOOK AT FADE TRANSITION
     return Container(
       width: widget.width,
       height: widget.height,
@@ -50,7 +51,7 @@ class _FrogDisplayState extends State<FrogDisplay> with SingleTickerProviderStat
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: Color.fromRGBO(255, 255, 255, .5),
+            color: frogColorToColor(widget.frog.color).withOpacity(.4),
             blurRadius: _anim?.value ?? tween.end,
             spreadRadius: _anim?.value ?? tween.end,
           ),
