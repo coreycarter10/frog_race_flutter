@@ -38,6 +38,9 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(Icons.play_arrow),
             onPressed: () {
               setState(() {
+                // TODO: Disable play button period.
+                // TODO: Wait for duration then check for winners and re-enable play button.
+                // TODO: Create dialog box when winner occurs.
                 _race.go();
               });
             },
@@ -83,7 +86,11 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           width: frogWidth,
                           height: frogHeight,
-                          color: frogColorToColor(frog.color),
+                          child: Image.asset(
+                            'assets/images/frog.png',
+                            color: frogColorToColor(frog.color),
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       ),
                     ],
