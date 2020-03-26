@@ -43,7 +43,6 @@ class _FrogDisplayState extends State<FrogDisplay> with SingleTickerProviderStat
       _animCtrl.forward();
     }
 
-    // TODO: TAKE A LOOK AT FADE TRANSITION
     return Container(
       width: widget.width,
       height: widget.height,
